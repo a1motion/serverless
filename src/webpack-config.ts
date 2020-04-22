@@ -16,7 +16,7 @@ const config: webpack.Configuration = {
   },
   resolveLoader: {
     alias: {
-      "internal-route-loader": require.resolve("./loaders/route"),
+      "internal-route-loader": require.resolve("./webpack/route"),
     },
   },
   optimization: {
