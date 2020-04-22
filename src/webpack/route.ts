@@ -14,6 +14,6 @@ const middleware = [${options.middleware
     })
     .join(", ")}];
 const {createHandler} = require("${options.runtime}");
-exports.handler = createHandler(mod, [...middleware, mod.middleware || []]);
+exports.handler = createHandler(mod, [...middleware, ...(mod.middleware || [])]);
 `;
 };
