@@ -19,6 +19,12 @@ const config: webpack.Configuration = {
       "internal-route-loader": require.resolve("./loaders/route"),
     },
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+      name: false,
+    },
+  },
   module: {
     rules: [
       {
